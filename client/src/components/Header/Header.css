@@ -1,0 +1,67 @@
+.menu-toggle {
+  position: fixed;
+  right: 20px;
+  height: 100%;
+  transform: translateY(10%);
+  z-index: 1;
+}
+
+.menu-toggle-icon {
+  color: yellow;
+  height: 80%;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  width: 100%;
+  background-color: black;
+}
+
+.header-buttons {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  color: yellow;
+  font-family: "Anton";
+  font-size: 1em;
+  transition: 0.2s;
+}
+
+.header-buttons:hover {
+  cursor: pointer;
+  transform: translateY(-5px);
+  transition: 0.5s;
+}
+
+.header-buttons.left {
+  margin-right: 1.5em;
+}
+
+.header-buttons.right {
+  margin-left: 1.5em;
+}
+
+.header-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: yellow;
+  font-family: "Anton";
+  width: 100%;
+}
+
+.header-title {
+  display: flex;
+  justify-content: center;
+  font-size: 2.5em;
+  transform: translateY(5%);
+  margin: 0;
+  padding: 0;
+}

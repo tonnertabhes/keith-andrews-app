@@ -1,0 +1,44 @@
+.menu {
+  position: fixed;
+  background-color: black;
+  right: 0;
+  width: 200px;
+  height: 100vh;
+  transition: 0.5s;
+  z-index: 2;
+}
+
+.menu.inactive {
+  transform: translateX(200px);
+  transition: 0.2s;
+}
+
+.menu-buttons {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+}
+
+.menu-button {
+  background: none;
+  border: none;
+  padding: none;
+  font-family: "Anton";
+  font-size: 1.5em;
+  margin-left: 1em;
+  margin-right: auto;
+  color: yellow;
+}
+
+.close-btn {
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-bottom: 40px;
+  margin-right: auto;
+  background: none;
+  padding: none;
+  border: none;
+  font-weight: bold;
+  font-size: 2em;
+  color: white;
+}

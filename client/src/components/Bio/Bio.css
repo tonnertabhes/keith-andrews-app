@@ -1,0 +1,55 @@
+.bio {
+  transform: translateY(100vh);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  width: 100vw;
+  margin-top: 0;
+  padding-top: 0;
+  background-color: black;
+  font-family: "Anton";
+}
+
+.head-bio {
+  display: flex;
+  width: 100%;
+  max-width: 900px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.bio-header {
+  width: 100%;
+  margin-top: 1em;
+  font-size: 3em;
+  color: yellow;
+}
+
+.headshot {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+  margin-bottom: 3em;
+  width: 70%;
+  transform: translateY(20px);
+  max-width: 400px;
+  border-radius: 0.75em;
+  transition: 0.2s;
+}
+
+.bio-body {
+  display: flex;
+  align-items: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.25em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+  color: white;
+  padding: 1em;
+  width: 80%;
+  max-width: 400px;
+  background-color: rgba(255, 0, 255, 0.075);
+  border-radius: 0.25em;
+}

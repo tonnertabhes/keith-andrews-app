@@ -1,0 +1,63 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  min-width: 100%;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.658);
+  z-index: 2;
+}
+
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  position: fixed;
+  max-width: 90%;
+  width: 600px;
+  background-color: black;
+  box-shadow: 0px 0px 10px purple;
+  border-radius: 0.5em;
+  z-index: 3;
+}
+
+h2 {
+  color: yellow;
+  font-family: "Anton";
+  margin: 0;
+  padding: 0;
+  margin-top: -0.75em;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  color: yellow;
+  margin-right: 1em;
+  margin-top: 1em;
+  margin-left: auto;
+}
+
+input {
+  max-width: 90%;
+  margin-bottom: 0.5em;
+  box-shadow: 0px 0px 10px purple;
+}
+
+.btn {
+  font-family: "Anton";
+  color: yellow;
+  margin: 0.5em;
+  padding-left: 3em;
+  padding-right: 3em;
+  border: none;
+  border-radius: 0.25em;
+  background-color: purple;
+  transition: 0.2s;
+  margin-bottom: 1em;
+}

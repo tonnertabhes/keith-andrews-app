@@ -1,0 +1,127 @@
+.shows {
+  transform: translateY(99.5vh);
+  width: 100%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.shows-header {
+  color: yellow;
+  font-family: "Anton";
+  font-size: 3em;
+  margin-top: 3em;
+}
+
+.show {
+  margin-top: 0.5em;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  border: solid;
+  background-color: rgba(128, 128, 128, 0.315);
+  border-radius: 0.5em;
+  padding: 0.5em;
+  max-width: 90vw;
+}
+
+.show-details {
+  width: 70%;
+  margin-left: 5px;
+  margin-right: auto;
+}
+
+.show-date {
+  font-size: 0.75em;
+  color: white;
+}
+
+.show-name {
+  font-family: "Anton";
+  margin-left: 5px;
+  margin-right: auto;
+  font-size: 1.5em;
+  color: yellow;
+  width: 70%;
+}
+
+.show-venue {
+  color: white;
+}
+
+.ticket-btn {
+  margin-right: 5px;
+  margin-left: auto;
+  transform: translateY(1em);
+  padding: 0.5em;
+  font-family: "Anton";
+  font-weight: bold;
+  font-size: 1em;
+  color: yellow;
+  border: none;
+  border-radius: 0.5em;
+  background-color: rgba(230, 0, 230, 0.267);
+  transition: 0.2s;
+}
+
+.ticket-btn:hover {
+  cursor: pointer;
+  background-color: rgb(230, 0, 230);
+  transition: 0.2s;
+}
+
+.delete-btn {
+  margin-right: 5px;
+  margin-left: auto;
+  transform: translateY(1em);
+  padding: 0.5em;
+  font-family: "Anton";
+  font-weight: bold;
+  font-size: 1em;
+  color: yellow;
+  border: none;
+  border-radius: 0.5em;
+  background-color: rgba(128, 0, 0, 0.267);
+  transition: 0.2s;
+}
+
+.delete-btn:hover {
+  cursor: pointer;
+  background-color: rgb(230, 0, 0);
+  transition: 0.2s;
+}
+
+.add-btn {
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 0.5em;
+  padding: 0.5em;
+  font-family: "Anton";
+  font-weight: bold;
+  font-size: 1em;
+  color: yellow;
+  border: none;
+  border-radius: 0.5em;
+  background-color: rgba(230, 0, 230, 0.267);
+  transition: 0.2s;
+}
+
+.add-btn:hover {
+  cursor: pointer;
+  background-color: rgb(230, 0, 230);
+  transition: 0;
+}
+
+.show-text {
+  font-size: large;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 100%;
+  padding-bottom: 0.5em;
+}
