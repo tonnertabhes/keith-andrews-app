@@ -51,7 +51,6 @@ function Login<Login>({ setLoginModal, setLoggedIn }: any) {
 
   return (
     <div className="login-container">
-      <p>Hello</p>
       <div className="login">
         <p onClick={() => setLoginModal(false)}>X</p>
         <h2>Admin Login</h2>
