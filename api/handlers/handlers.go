@@ -46,6 +46,7 @@ func Login(w http.ResponseWriter, r *http.Request) {
 
 	expectedPassword, ok := users[credentials.Username]
 	checkPassword := HashFunction(credentials.Password)
+	fmt.Printf("tried")
 	
 	if !ok || expectedPassword != checkPassword {
 		w.WriteHeader(http.StatusUnauthorized)

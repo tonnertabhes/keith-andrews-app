@@ -9,7 +9,7 @@ import Contact from "./components/Contact/Contact";
 import Media from "./components/Media/Media";
 import Shows from "./components/Shows/Shows";
 import Login from "./components/Login/Login";
-import AddShowsModal from "./components/AddShowsModal/AddShowsModal";
+import AddShowsModal from "./modals/AddShowsModal/AddShowsModal";
 
 function App() {
   const [loginModal, setLoginModal] = useState(false);

@@ -5,7 +5,7 @@ import "./Shows.css";
 function Shows({ showsRef, loggedIn, setAddShowsActive }: any) {
   const [shows, setShows] = useState<show[]>([]);
   async function getShows() {
-    let response = await fetch(API_ADDRESS + "getshows", {
+    let response = await fetch(API_ADDRESS + "/getshows", {
       method: "GET",
     });
     let data = await response.json();
