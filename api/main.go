@@ -27,7 +27,7 @@ func main() {
 
 	fmt.Println("Application running at Port 12345")
 	ctx, _ := context.WithTimeout(context.Background(), 10*time.Second)
-	config.Client, _ = mongo.NewClient(options.Client().ApplyURI("mongodb://127.0.0.1:27017"))
+	config.Client, _ = mongo.NewClient(options.Client().ApplyURI("mongodb://localhost:27017"))
 	cliErr := config.Client.Connect(ctx)
 	if cliErr != nil {
 		fmt.Println(err.Error())

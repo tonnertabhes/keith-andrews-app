@@ -1,0 +1,50 @@
+version: "3.8"
+
+services:
+  mongodb:
+    image: mongo
+    restart: always
+    ports:
+      - 27017:27017
+    environment:
+      - MONGO_INITDB_DATABASE=keith
+      - MONGO_INITDB_USERNAME=admin
+      - MONGO_INITDB_PASSWORD=password
+    volumes:
+      - ./db-data/mongo/:/data/db
+    networks:
+      - shared-network
+
+  api:
+    container_name: keith-andrews-api
+    restart: unless-stopped
+    image: keith-andrews-website-api
+    build:
+      context: api
+      target: production
+      dockerfile: Dockerfile
+    ports:
+      - 12345:12345
+    networks:
+      - shared-network
+    depends_on:
+      - mongodb
+
+  client:
+    container_name: keith-andrews-client
+    restart: unless-stopped
+    image: keith-andrews-website-client
+    build:
+      context: client
+      target: production
+      dockerfile: Dockerfile
+    ports:
+      - 3000:3000
+    networks:
+      - shared-network
+    depends_on:
+      - api
+
+
+networks:
+  shared-network:
